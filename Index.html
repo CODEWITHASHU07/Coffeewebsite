@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- linking google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- linking bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!-- linking css -->
+    <link rel="stylesheet" href="./1st.css" />
+    <link rel="stylesheet" href="./main.css" />
+    <!--Tittle -->
+    <title>Coffee</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav" id="logo">
+        <img src="./image/mainlogo_croped.jpg" alt="" />
+      </div>
+
+      <div class="nav" id="ulbar">
+        <ul class="section" id="ul">
+          <li><a href="#HOME">HOME</a></li>
+          <li><a href="#ABOUT">ABOUT</a></li>
+          <li><a href="#MENU">MENU</a></li>
+          <li><a href="#PRODUCT">PRODUCT</a></li>
+          <li><a href="#REVIEW">REVIEW</a></li>
+          <li><a href="#CONTACT">CONTACT</a></li>
+          <li><a href="#BLOG">BLOG</a></li>
+        </ul>
+      </div>
+
+      <div id="iconsnav">
+        <span>
+          <span
+            ><input id="input" class="visible" type="text" /><span id="eraser"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="22"
+                height="18"
+                fill="currentColor"
+                class="bi bi-x"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"
+                /></svg
+            ></span> </span
+          ><svg
+            id="search"
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-search"
+            viewBox="0 0 18 18"
+          >
+            <path
+              d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+            /></svg
+        ></span>
+        <span onclick="slider()"
+          ><svg
+            id="Shop"
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-cart2"
+            viewBox="0 0 18 18"
+          >
+            <path
+              d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"
+            /></svg></span
+        ><span id="trigerbar">
+          <svg onclick="nav_visible()"
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-list"
+            viewBox="0 0 18 18"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+            /></svg
+        ></span>
+      </div>
+    </nav>
+    <section class="part header" Id="HOME">
+      <img
+        src="./image/homesection.jpg"
+        height="100%"
+        width="100%"
+        alt=""
+        id="bg"
+      />
+      <div id="headercontent">
+        <h1>
+          Fresh Coffee In the <br />
+          Morning
+        </h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo,
+          aperiam non! Placeat delectus eum tempore
+        </p>
+        <center><button>get It Now</button></center>
+      </div>
+    </section>
+      <div class="shop" id="asideright">
+        <ul>
+          <li id="shoplist">
+            <div class="image">
+              <img
+                src="./image/heap-of-hot-roasted-coffee-beans-with-steam.jpg"
+                alt="Coffeeimage"
+              />
+            </div>
+            <div class="content">
+              <h4><span style="--c: #da6a4f">Rosted</span> Coffee</h4>
+              <br />
+              <h6><sup>Only</sup><u>499</u><strik>799</strik></h6>
+            </div>
+          </li>
+          <li id="shoplist">
+            <div class="image">
+              <img src="./image/green-beans.png" alt="Coffeeimage" />
+            </div>
+            <div class="content">
+              <h4><span style="--c: green">Green</span> Coffee</h4>
+              <br />
+              <h6><sup>Only</sup><u>399</u><strik>999</strik></h6>
+            </div>
+          </li>
+          <li id="shoplist">
+            <div class="image">
+              <img src="./image/what-is-specialty-coffee.jpg" alt="Coffeeimage" />
+            </div>
+            <div class="content">
+              <h4><span style="--c: #c2c242">Special</span> Coffee</h4>
+              <br />
+              <h6><sup>Only</sup><u>699</u><strik>1099</strik></h6>
+            </div>
+          </li>
+        </ul>
+      </div>
+    
+    <main>
+      <section class="part" id="ABOUT">
+        <h1>About Us</h1>
+        <div id="aboutcontent">
+          <div class="aboutfirst">
+            <img src="./image/aboutsection.jpg" />
+          </div>
+          <div class="aboutsecond">
+            <h4>What Makes Our Coffee Special</h4>
+            <br />
+            <p>
+              <span>Coffee</span>Lorem ipsum dolor sit amet consectetur,
+              adipisicing elit. Error corporis facere dolor obcaecati ea iste
+              cumque, tempore possimus est modi quam earum!<br />
+              Rerum dicta ad recusandae praesentium expedita illo, voluptatibus
+              quaerat fugiat aperiam, exercitationem qui dignissimos. Autem ut
+              dolore non, id explicabo, eveniet quas voluptatem porro nulla esse
+              facere repellendus. Lorem ipsum dolor sit amet.
+            </p>
+            <button><a href="#none">KNOW MORE</a></button>
+          </div>
+        </div>
+      </section>
+      <!-- menu section started -->
+
+      <section class="second part" id="MENU">
+        <h1>OUR MENU</h1>
+        <div id="menudiv">
+          <div class="menucard">
+            <div class="menucardimage">
+              <img src="./image/PCOS-and-coffee-scaled.jpg" alt="" />
+            </div>
+            <div class="menucardcontent">
+              <h4>Testy & Healthy</h4>
+              <span class="pricetag">Rs-150 &nbsp; <s>250</s></span
+              ><button>Add to Cart</button>
+            </div>
+          </div>
+          <div class="menucard">
+            <div class="menucardimage">
+              <img src="./image/download.jpeg" alt="coffee" />
+            </div>
+            <div class="menucardcontent">
+              <h4>Testy & Healthy</h4>
+              <span class="pricetag">Rs-150 &nbsp; <s>250</s></span
+              ><button>Add to Cart</button>
+            </div>
+          </div>
+          <div class="menucard">
+            <div class="menucardimage">
+              <img
+                src="./image/getty_500740897_200013331653767347294_333325.jpg"
+                alt=""
+              />
+            </div>
+            <div class="menucardcontent">
+              <h4>Testy & Healthy</h4>
+              <span class="pricetag">Rs-150 &nbsp; <s>250</s></span
+              ><button>Add to Cart</button>
+            </div>
+          </div>
+          <div class="menucard">
+            <div class="menucardimage">
+              <img src="./image/Iced-coffee.webp" alt="" />
+            </div>
+            <div class="menucardcontent">
+              <h4>Testy & Healthy</h4>
+              <span class="pricetag">Rs-150 &nbsp; <s>250</s></span
+              ><button>Add to Cart</button>
+            </div>
+          </div>
+          <div class="menucard">
+            <div class="menucardimage">
+              <img src="./image/images.jpeg" alt="" />
+            </div>
+            <div class="menucardcontent">
+              <h4>Testy & Healthy</h4>
+              <span class="pricetag">Rs-150 &nbsp; <s>250</s></span
+              ><button>Add to Cart</button>
+            </div>
+          </div>
+          <div class="menucard">
+            <div class="menucardimage">
+              <img src="./image/Latte-Art-066.webp" alt="" />
+            </div>
+            <div class="menucardcontent">
+              <h4>Testy & Healthy</h4>
+              <span class="pricetag">Rs-150 &nbsp; <s>250</s></span
+              ><button>Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Product section started  -->
+      <section class="third part" id="PRODUCT">
+        <h1>OUR PRODUCT</h1>
+        <div class="productcontainer">
+          <div class="Box">
+            <div class="top">
+              <span><img class="icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAABRklEQVQ4T7WUP04CQRSHmYZoJ+ECUFKYICcggdBzAqUysZIDmKgX0JIOjgAHQDiBqBWNEXoS8QTr9yOzZKLsMrOESV7mz773zW/evFmTO0IzR2DmNtAois7oqhobY6aHbhRDS4C+HFgb+DAr3FX6ZCFX9GughYOgbjCp6DMXuAN4kAX876KAKrczbIGFpuBdQnbePmDlV3nO0gpJUB1faQhtbyi9SIKqxJSCULUPQO8Ti58UqBpuA6WWgS7SoFL7HQAdAmzLP/WZOuXlw94+mH3QOrSJB3GNj46uPl2pHDzL6xlgN95871/KPoZLApTjXW3JoqAblb5KT3C8wUYEfrpUNmwxP2V95K77KO0RcI3NCa7EwQDPGX/YeZNv4xCldzg/Yi8ENhxokfHKzit8m3tD7WXVCHr9m1DU5u3xf4KOn3A5qcu/ARJtIwPlL4EAAAAASUVORK5CYII="/></span><span><img class="icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAABAUlEQVQ4T7XVgRGCMAwFULoBboAb6Aa6gSPoCE4gTKBOoBvoBrKBbiAb2A3wxwvQlpaWq3DH4V3IS1oCimSCQ0xgJk60rusUBVMhRGUW5liG2MvWVA9Fwgo3HnFmhHLSFdcCp+TYRomV+H1GgXtTQEMB5ggcBraE0KaQeVsBmPK75XOHj8g9XgMu206B3gDSsmIOCXSmom/exxg0ASp+KD/NT5TWJc//3Wlv+RcU20Z2e8Li92qnNCrPiH2tkLsEKs05XTA8tmGa313zAtjeqLGwBmrDr7aGaQiFe6AT5THzwVZwEPXATtCLOuBBMAg1YC8YjCowfZjb76Zr7ib5O/kCB2ZnMyul9GkAAAAASUVORK5CYII="/></span><span><img class="icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAABc0lEQVQ4T92U4U3DQAyFcxswAiPQCUgngE4AbEAnKExAmIAwAe0EZAPKBHSDlgnC+06+4lyVRkHqHyxZudzZz8/Pl4TiBBZOgFn8I9C2bc8k0bk56418HULY9UnX277ASiU9ObAcY6mNlcDr/OAA1Ji9KPDagmG0Nv/W89IxJ4SzqWfeARUgbb5bEsGPCobRgSn2QptvFkvhiWKRpjt9BRIEw8oAo24mxZWWaPqsZApG0xld3cJY+5MOqA7vtYGGtXye2jFAigGYjHYbB5zIkFfF9k3HLwvat5ExcZjFUskzB0rB33wHutW6o42dwZ4uxoFa8oOeC3kjFlPHotSa4Xmb+QE6XSvtz/PpfyiTqcZDB8weBbHXDDDNYn+1ctCkDU+C7vykPVX3cVAQ2RhevBV9l592CcY2VuDTkv3lp3hjxYmLduwzpa0bB+6JsgZsJa/z/8Dgr8+uW6lkWCVZdn2yHGWa0xrzPsh0DNigpn8BSzk/0ouhUDaDvNsAAAAASUVORK5CYII="/></span>
+            </div>
+            <div class="image"><img src="./image/coffeeproduct_1-removebg-preview.png" alt ="coffeimage"></div>
+            <div class="Textcontainer">
+              <h4>Fresh Coffee</h4>
+              <h5 class="firststar">
+               <span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span>
+              </h5>
+              <h6>Rs <em>239</em><s>649</s></h6>
+            </div>
+          </div>
+          <div class="Box">
+            <div class="top">
+              <span><img class="icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAABRklEQVQ4T7WUP04CQRSHmYZoJ+ECUFKYICcggdBzAqUysZIDmKgX0JIOjgAHQDiBqBWNEXoS8QTr9yOzZKLsMrOESV7mz773zW/evFmTO0IzR2DmNtAois7oqhobY6aHbhRDS4C+HFgb+DAr3FX6ZCFX9GughYOgbjCp6DMXuAN4kAX876KAKrczbIGFpuBdQnbePmDlV3nO0gpJUB1faQhtbyi9SIKqxJSCULUPQO8Ti58UqBpuA6WWgS7SoFL7HQAdAmzLP/WZOuXlw94+mH3QOrSJB3GNj46uPl2pHDzL6xlgN95871/KPoZLApTjXW3JoqAblb5KT3C8wUYEfrpUNmwxP2V95K77KO0RcI3NCa7EwQDPGX/YeZNv4xCldzg/Yi8ENhxokfHKzit8m3tD7WXVCHr9m1DU5u3xf4KOn3A5qcu/ARJtIwPlL4EAAAAASUVORK5CYII="/></span><span><img class="icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAABAUlEQVQ4T7XVgRGCMAwFULoBboAb6Aa6gSPoCE4gTKBOoBvoBrKBbiAb2A3wxwvQlpaWq3DH4V3IS1oCimSCQ0xgJk60rusUBVMhRGUW5liG2MvWVA9Fwgo3HnFmhHLSFdcCp+TYRomV+H1GgXtTQEMB5ggcBraE0KaQeVsBmPK75XOHj8g9XgMu206B3gDSsmIOCXSmom/exxg0ASp+KD/NT5TWJc//3Wlv+RcU20Z2e8Li92qnNCrPiH2tkLsEKs05XTA8tmGa313zAtjeqLGwBmrDr7aGaQiFe6AT5THzwVZwEPXATtCLOuBBMAg1YC8YjCowfZjb76Zr7ib5O/kCB2ZnMyul9GkAAAAASUVORK5CYII="/></span><span><img class="icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAABc0lEQVQ4T92U4U3DQAyFcxswAiPQCUgngE4AbEAnKExAmIAwAe0EZAPKBHSDlgnC+06+4lyVRkHqHyxZudzZz8/Pl4TiBBZOgFn8I9C2bc8k0bk56418HULY9UnX277ASiU9ObAcY6mNlcDr/OAA1Ji9KPDagmG0Nv/W89IxJ4SzqWfeARUgbb5bEsGPCobRgSn2QptvFkvhiWKRpjt9BRIEw8oAo24mxZWWaPqsZApG0xld3cJY+5MOqA7vtYGGtXye2jFAigGYjHYbB5zIkFfF9k3HLwvat5ExcZjFUskzB0rB33wHutW6o42dwZ4uxoFa8oOeC3kjFlPHotSa4Xmb+QE6XSvtz/PpfyiTqcZDB8weBbHXDDDNYn+1ctCkDU+C7vykPVX3cVAQ2RhevBV9l592CcY2VuDTkv3lp3hjxYmLduwzpa0bB+6JsgZsJa/z/8Dgr8+uW6lkWCVZdn2yHGWa0xrzPsh0DNigpn8BSzk/0ouhUDaDvNsAAAAASUVORK5CYII="/></span>
+            </div>
+            <div class="image"><img src="./image/coffee2.png" alt=""></div>
+            <div class="Textcontainer">
+              <h4>Fresh Coffee</h4>
+              <h5 class="secondstar">
+                <span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span>
+              </h5>
+              <h6>Rs <em>499</em><s>749</s></h6>
+            </div>
+          </div>
+          <div class="Box">
+            <div class="top">
+              <span><img class="icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAABRklEQVQ4T7WUP04CQRSHmYZoJ+ECUFKYICcggdBzAqUysZIDmKgX0JIOjgAHQDiBqBWNEXoS8QTr9yOzZKLsMrOESV7mz773zW/evFmTO0IzR2DmNtAois7oqhobY6aHbhRDS4C+HFgb+DAr3FX6ZCFX9GughYOgbjCp6DMXuAN4kAX876KAKrczbIGFpuBdQnbePmDlV3nO0gpJUB1faQhtbyi9SIKqxJSCULUPQO8Ti58UqBpuA6WWgS7SoFL7HQAdAmzLP/WZOuXlw94+mH3QOrSJB3GNj46uPl2pHDzL6xlgN95871/KPoZLApTjXW3JoqAblb5KT3C8wUYEfrpUNmwxP2V95K77KO0RcI3NCa7EwQDPGX/YeZNv4xCldzg/Yi8ENhxokfHKzit8m3tD7WXVCHr9m1DU5u3xf4KOn3A5qcu/ARJtIwPlL4EAAAAASUVORK5CYII="/></span><span><img class="icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAABAUlEQVQ4T7XVgRGCMAwFULoBboAb6Aa6gSPoCE4gTKBOoBvoBrKBbiAb2A3wxwvQlpaWq3DH4V3IS1oCimSCQ0xgJk60rusUBVMhRGUW5liG2MvWVA9Fwgo3HnFmhHLSFdcCp+TYRomV+H1GgXtTQEMB5ggcBraE0KaQeVsBmPK75XOHj8g9XgMu206B3gDSsmIOCXSmom/exxg0ASp+KD/NT5TWJc//3Wlv+RcU20Z2e8Li92qnNCrPiH2tkLsEKs05XTA8tmGa313zAtjeqLGwBmrDr7aGaQiFe6AT5THzwVZwEPXATtCLOuBBMAg1YC8YjCowfZjb76Zr7ib5O/kCB2ZnMyul9GkAAAAASUVORK5CYII="/></span><span><img class="icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAABc0lEQVQ4T92U4U3DQAyFcxswAiPQCUgngE4AbEAnKExAmIAwAe0EZAPKBHSDlgnC+06+4lyVRkHqHyxZudzZz8/Pl4TiBBZOgFn8I9C2bc8k0bk56418HULY9UnX277ASiU9ObAcY6mNlcDr/OAA1Ji9KPDagmG0Nv/W89IxJ4SzqWfeARUgbb5bEsGPCobRgSn2QptvFkvhiWKRpjt9BRIEw8oAo24mxZWWaPqsZApG0xld3cJY+5MOqA7vtYGGtXye2jFAigGYjHYbB5zIkFfF9k3HLwvat5ExcZjFUskzB0rB33wHutW6o42dwZ4uxoFa8oOeC3kjFlPHotSa4Xmb+QE6XSvtz/PpfyiTqcZDB8weBbHXDDDNYn+1ctCkDU+C7vykPVX3cVAQ2RhevBV9l592CcY2VuDTkv3lp3hjxYmLduwzpa0bB+6JsgZsJa/z/8Dgr8+uW6lkWCVZdn2yHGWa0xrzPsh0DNigpn8BSzk/0ouhUDaDvNsAAAAASUVORK5CYII="/></span>
+            </div>
+            <div class="image"><img src="./image/coffee_sample_2-removebg-preview.png" alt=""></div>
+            <div class="Textcontainer">
+              <h4>Fresh Coffee</h4>
+              <h5 class="laststar">
+                <span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span>
+              </h5>
+              <h6>Rs <em>699</em><s>850</s></h6>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- review section started -->
+      <section class="fourth part" id="REVIEW"><h1>REVIEW</h1>
+      <div id="reviewcontain">
+        <div class="review">
+          <div class="reviewTop"><span class="bars"></span>
+            <span class="bars"></span>
+          </div>
+          <div class="reviewtext">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique deserunt pariatur voluptates, eius aperiam ex! Quas numquam libero est! Ipsum autem ducimus perspiciatis, neque in totam molestiae eos aliquid doloremque!</p>
+          </div>
+          <div class="reviewfooter">
+            <span class="customerimage"><img src="./image/customer1.jpg" alt=""></span>
+            <span class="username">Satyam Rana</span>
+            <span id="ratings"><span></span><span></span><span></span><span></span><span></span></span>
+          </div>
+        
+        </div>
+          <div class="review">
+            <div class="reviewTop"><span class="bars"></span><span class="bars"></span></div>
+            <div class="reviewtext">
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt iure numquam rerum! Ipsam, voluptate nisi dolore vero, magni aliquid corrupti eligendi harum laudantium esse voluptatibus perspiciatis repellendus obcaecati nihil facilis.</p>
+            </div>
+            <div class="reviewfooter">
+              <span class="customerimage"><img src="./image/customer2nd.jpg" alt=""></span>
+
+              <span class="username">Harry Deo</span>
+              <span id="ratings"><span></span><span></span><span></span><span></span><span></span></span>
+            </div>
+          
+          </div>
+
+     
+          <div class="review">
+            <div class="reviewTop"><span class="bars"></span><span class="bars"></span></div>
+            <div class="reviewtext">
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem, temporibus ex quae, ducimus tempore aperiam sunt perspiciatis rem optio qui totam eligendi quod modi harum libero esse soluta explicabo delectus!</p>
+            </div>
+            <div class="reviewfooter">
+              <span class="customerimage"><img src="./image/customer3rd.webp" alt=""></span>
+              <span class="username">Anuj Bhadoriya</span>
+              <span id="ratings"><span></span><span></span><span></span><span></span><span></span></span>
+            </div>
+          
+          </div>
+      </div></section>
+    </main>
+    <footer>
+      <section class="part fifth" id="CONTACT"><h1>CONTACT WITH US</h1>
+        <div id="map"><img src="./image/ggogle map image.png" alt=""></div>
+      <div class="contactform">
+        <form >
+        <input type="text" placeholder="Enter your Name" required></input>
+        <input type="email" placeholder="Enter your mail id" required></input>
+        <input type="text" placeholder="Enter your Contact Number" required></input>
+        <textarea name="text" cols="15" rows="1" placeholder="feel free to tell us "></textarea>
+        <input type="submit" value="Submit" id="SUBMIT">
+      </form>
+      </div>
+      
+      
+      </section>
+      <!-- blog section started -->
+      <section class="part sixth" id="BLOG"><h1>OUR BLOGS</h1>
+      <div class="blogarea">
+        <div class="blogBox">
+          <div class="blogimage"><img src="./image/blog1 image.jpg" alt=""></div>
+          <div class="blogcontent">
+            <h3 id="heading">Teasty & Refreshing </h3>
+            <h4><span>By Admin</span> /1st oct 23</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias rerum iste porro saepe natus maiores!</p>
+          </div>
+          <button>Read More</button>
+        </div>
+        <div class="blogBox">
+          <div class="blogimage"><img src="./image/blog2.jpg" alt=""></div>
+          <div class="blogcontent">
+            <h3 id="heading">Teasty & Refreshing </h3>
+            <h4><span>By Admin</span> /1st oct 23</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias rerum iste porro saepe natus maiores!</p>
+          </div>
+          <button>Read More</button>
+        </div>
+
+
+        <div class="blogBox">
+          <div class="blogimage"><img src="./image/blog3.jpg" alt=""></div>
+          <div class="blogcontent">
+            <h3 id="heading">Teasty & Refreshing </h3>
+            <h4><span>By Admin</span> /1st oct 23</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias rerum iste porro saepe natus maiores!</p>
+          </div>
+          <button>Read More</button>
+        </div>
+
+
+
+
+
+
+
+        
+      </div>
+      
+      
+      
+      
+      
+      </section>
+    </footer>
+    <script src="./1st.js"></script>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"
+  ></script>
+</html>
