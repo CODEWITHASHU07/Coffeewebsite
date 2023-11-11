@@ -3,21 +3,20 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* font-family: 'Mooli', sans-serif; */
     font-family: 'Rubik Wet Paint', cursive;
    
 }
 body
 {
-    height:640vh;
     width: 100%;
     box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-snap-type: proximity;
 }
 .part
 {
-    height: 90vh;
     background: rgba(0, 0, 0, 0.997);
-   border-bottom:  0.1px solid rgba(240, 248, 255, 0.32);;
+   border-bottom:  0.1px solid rgba(240, 248, 255, 0.32);
     color: white;
 }
 #trigerbar
@@ -25,14 +24,13 @@ body
     display: none;
 }
 .header{
-    height: 90vh;
-    background: rgb(15, 15, 15);
+    min-height: 100vh;
 
 }
 nav{
     background: #030303;
-    height: 10vh;
-    width: 100%;
+    height: 15vh;
+    max-width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -45,8 +43,8 @@ nav{
 }
 nav #logo
 {
-    height: 90%;
-    margin-left: 2%;
+    height:80%;
+    margin-left: 1.2rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -59,21 +57,18 @@ nav div:nth-child(2)
 }
 nav #logo img{
     height:100%;
-    width: 100%;
     border-radius: 50%;
-    /* clip-path: circle(); */
 }
 nav ul{
-    height: 100%;
+    max-height: 80%;margin-block: auto;
     width: 100%;
     list-style: none;
-    font-size: 16px;
+    font-size: 18px;
     display: flex;
     align-items: center;
 }
 .nav .section li{
     margin-right: 1rem;
-    padding-top: 3px;
     padding-block: 4px;
     transition: all 0.5s;
     
@@ -100,10 +95,10 @@ nav ul li:active a
     color:rgba(112, 41, 41, 0.349);
 }
 nav div:nth-child(3){
-  margin-left: 1%;
+  margin-left: 0.5rem;
   height: 60%;
   width: 12%;
-  margin-right: 2%;
+  margin-right:1rem;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -140,7 +135,6 @@ nav div:nth-child(3)>span
 
     color: white;
     height: 70%;
-    width: 22%;
     column-gap: 5%;
     display: flex;
     align-items: center;
@@ -150,7 +144,7 @@ nav div:nth-child(3)>span
 nav div:nth-child(3)>span svg
 {
     height: 100%;
-    width: 100%;
+    width: 80%;
     /* border: 1px solid yellow; */
 }
 nav div:nth-child(3) span>span>span{
@@ -175,43 +169,45 @@ main{
     grid-column: 1/1;
     display: grid;
     grid-row:1fr 1fr 1fr 1fr 1fr;
-    background: rgb(214, 124, 139);
 }
 /* shop styling */
 .shop
 {
-    height: 40vmax;
-    width: 30vmax;
+    max-width: 300px;
+    min-width: 250px;
+    height: 300px;
+    width: 44vw;
     position: fixed;
-    right: 1%;
-    top: 15vh;
+    right: 1.2rem;
+    top: 16vh;
     color: #030303;
     border-radius: 0.5rem;
     background: rgba(246, 245, 245, 0.73);
-    transform: translateX(50vw);
+    transform: translateX(100vw);
     transition: all 0.3s ease-out;
     z-index: 4;
     opacity: 1;
+    
 }
 .slide
 {
     transform: translateX(0vw);
-}
-.shop ul{
+  }
+  .shop ul{
+
+    max-width: 90%;
     height: 100%;
-    width: 100%;
     list-style: none;
     object-fit: contain;
     cursor: pointer;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .shop ul #shoplist{
     position: relative;
-    height: 30%;
+    height: 33%;
     width: 90%;
-    /* margin-inline: -1.5rem; */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -226,9 +222,8 @@ main{
     height: 8px;
     width: 8px;
     z-index: 12;
-    top: 0;
-    right: -10px;
-    /* right: -10%; */
+    top: 1rem;
+    right: -2rem;
 }
 .shop ul li .image
 {
@@ -259,7 +254,7 @@ main{
     font-size: 18px;
     height: 20%;
     width: 100%;
-    /* white-space: nowrap; */
+    white-space: nowrap;
    
 
     
@@ -296,25 +291,23 @@ main{
 /* section styling */
 .header{
     position: relative;
+    background-image: url( "./image/homesection.jpg"
+  );
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-#bg
-{
-   opacity: 0.9;
-   filter: brightness(100%);
-   filter: blur(0.1px);
-   position: relative;
-   z-index: 1;
-}
+
 .header #headercontent
 {
    
-    width: 50%;
-    height: 50%;
+    max-width: 50%;
+    width: 40%;
     position: absolute;
-    top: 30%;
+    top: 25%;
     left: 2%;
     background: transparent;
-    z-index: 1;
+    z-index: 3;
 }
 .header #headercontent h1{
     color: rgba(245, 245, 245, 0.797);
@@ -327,7 +320,7 @@ main{
     text-wrap: balance;
 }
 .header #headercontent center button{
-    padding: 2px 5px;
+    padding: 4px 7px;
     color: white;
     border: 0.2px solid ;
     margin-top: 10%;
@@ -338,10 +331,11 @@ main{
     box-shadow:4px 4px 10px rgb(0, 0, 0);
     transition: all 0.4s;
     cursor: pointer;
+    box-shadow: -2px 3px 1px whitesmoke;
 }
 .header #headercontent center button:hover{
      transform: scale(1.2);
-     background: gray;
+     background: whitesmoke;
      color: black;
      box-shadow:-4px 8px 0px #010101;
 }
@@ -356,22 +350,22 @@ main{
     text-align: center;
     text-transform: uppercase;
     font-weight: 700;
-    height: 7%;
     letter-spacing: 1.2px;
     color: rgba(245, 245, 245, 0.822);
-    margin-top: 10px;
+    margin-block: 10px;
 }
 #aboutcontent
 {
-    height: 80%;
-    width: 90%;
+    /* height: 80%; */
+    width: 95%;
     display: flex;
     align-items: center;
     justify-content: center;
     background: rgba(5, 15, 24, 0.407);
-    margin: 2% 5%;
+    margin: 2% auto;
+    border-radius: 2rem;
+    padding: 1.5rem 1rem;
     position: relative;
-   
 }
 #aboutcontent .aboutfirst{
     height: 100%;
@@ -410,7 +404,7 @@ main{
 #aboutcontent .aboutsecond p{
     border-top: 1px solid rgba(255, 255, 255, 0.544);
     padding-top: 5%;
-    font-size: 12px;
+    font-size: 14px;
     color:rgba(240, 248, 255, 0.91);
     height:50%;
     overflow-y: auto;
@@ -470,14 +464,12 @@ body::-webkit-scrollbar-thumb
 }
 body::-webkit-scrollbar-track{
     background: gray;
-    width: 10px;
     
 }
 body::-webkit-scrollbar-corner{
     background:black;
     border-bottom-left-radius:50%;
 }
-
 #MENU h1 {
   text-align: center;
   color: rgba(240, 248, 255, 0.843);
@@ -495,7 +487,7 @@ body::-webkit-scrollbar-corner{
   margin-left: auto;
   margin-right: auto;
 }
-#menudiv .menucard {
+.menucard {
   height: 48%;
   width: 32%;
   border: 1px solid rgba(255, 255, 255, 0.701);
@@ -550,18 +542,20 @@ body::-webkit-scrollbar-corner{
 }
 #menudiv .menucardcontent button {
   background: rgb(106, 172, 190);
-  color: rgba(14, 13, 13, 0.8941176471);
-  padding: 2% 5%;
+ 
+  color: rgba(14, 13, 13, 0.894);
+  padding: 0.3rem 0.5rem;
   border-radius: 0.5rem;
   border: 1px solid rgba(106, 98, 98, 0.8);
   outline: none;
   transition: all 0.4s;
-  margin-bottom: 5%;
+  margin-bottom: 1.5rem;
 }
 #menudiv .menucardcontent button:hover {
   background: rgb(78, 179, 207);
   color: aliceblue;
   transform: scale(1.1);
+  box-shadow: -4px 4px 0px black;
 }
 #menudiv .menucardcontent button:active {
   background: rgba(78, 179, 207, 0.693);
@@ -693,6 +687,7 @@ body::-webkit-scrollbar-corner{
 #REVIEW {
   position: sticky;
   top: 10vh;
+  min-height:100vh;
 }
 #REVIEW h1 {
   text-align: center;
@@ -800,6 +795,7 @@ body::-webkit-scrollbar-corner{
 
 .fifth {
   position: relative;
+  min-height: 70vh;
 }
 .fifth h1 {
   text-align: center;
@@ -816,6 +812,7 @@ body::-webkit-scrollbar-corner{
   top: 14%;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
   overflow: hidden;
 }
@@ -905,6 +902,10 @@ body::-webkit-scrollbar-corner{
 .fifth .contactform #SUBMIT:hover {
   transform: scale(1.1);
 }
+.sixth
+{
+  min-height: 80vh;
+}
 
 .sixth h1 {
   text-align: center;
@@ -912,7 +913,7 @@ body::-webkit-scrollbar-corner{
   font-weight: 900;
   letter-spacing: 1.5px;
   margin-block: auto;
-  height: 8%;
+
 }
 .sixth .blogarea {
   height: 88%;
@@ -936,8 +937,9 @@ body::-webkit-scrollbar-corner{
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
-.sixth .blogBox .blogimage img {
+.sixth .blogBox .blogimage img{
   border-radius: inherit;
   height: 100%;
   width: 100%;
@@ -977,18 +979,126 @@ body::-webkit-scrollbar-corner{
   background: peru;
   border: none;
   outline: none;
+  margin-bottom: 0.5em;
 }
 .sixth .blogBox button:active {
   transform: scale(1.04);
   box-shadow: -2px 2px 4px rgba(136, 125, 125, 0.349);
 }
 
+#Outsupport
+{
+  max-width: 100%;
+  background:rgba(0, 0, 0, 0.53);
+  color: rgba(245, 245, 245, 0.762);
+  display: flex;
+ justify-content: space-around;
+ cursor: pointer;
+ padding-top: 1rem;
+  
+}
+#sector
+{
+  padding: 0 1rem;
+ 
+
+
+}
+#sector h3
+{
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-family: cursive;
+  text-align: start;
+
+}
+#sector ul{
+  margin-left: 0.5rem;
+}
+#sector li{
+  list-style: circle;
+  margin-bottom: 0.5em;
+ 
+}
+#sector li a{
+  text-decoration: none;
+  font-family:sans-serif;
+  color: white;
+  font-weight: 16px;
+  font-weight: 500;
+  transition: all 0.5s ease;
+}
+#sector li a:hover
+{
+  color: black;
+}
+#Socialnetwork
+{
+  max-width: 40%;
+  margin-left: 1rem;
+
+}
+#Socialnetwork h3{
+  font-weight: 800;
+  text-align: start;
+}
+#Socialnetwork span{
+  font-size: 18px;
+  margin-left: 1rem;
+}
+#Socialnetwork ul{
+  margin-left: 1rem;
+
+}
+#Socialnetwork ul li{
+  
+  list-style: circle;
+  transition: all 0.5s ease;
+}
+#Socialnetwork ul li:hover{
+  color: black;
+}
+#mono
+{
+  height: 15%;
+  max-width: 70%;
+  min-width: 50%;
+  align-items: center;
+  display: flex;
+  justify-content:
+  space-around;
+   
+}
+#mono img{
+  height: 50%;
+  width: 20%;
+  transition: transform 0.5s ease;
+}
+#mono img:hover{
+  transform: scale(1.2);
+}
+/* media querry */
+/* !------------------- */
+
 @media (max-width: 990px) {
+  nav #logo {
+    height: 80%;
+    width: 10%;
+    margin-left: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
   #menudiv {
     gap: 2%;
   }
 }
 @media (max-width: 790px) {
+  nav #logo
+  {
+    width:20%;
+  }
   #trigerbar {
     display: block;
   }
@@ -1003,17 +1113,22 @@ body::-webkit-scrollbar-corner{
     width: 20%;
   }
   #ulbar {
-    height: 40vh;
-    width: 25vw;
+    height: 60vh;
+    width: 30vw;
     color: white;
     position: absolute;
     left: 0;
-    top: 10vh;
+    top: 16vh;
     background: transparent;
     transform: translateX(-50vw);
     transition: all 0.6s;
     margin: 0;
     padding: 0;
+    border: 1px solid lightgray;
+    border-left: none;
+    border-top-right-radius:1rem;
+    border-bottom-right-radius:1rem;
+  
   }
   #ulbar #ul {
     height: 100%;
@@ -1023,21 +1138,25 @@ body::-webkit-scrollbar-corner{
     justify-content: space-between;
   }
   #ulbar #ul li {
-    height: 10%;
+    height: 40%;
     width: 100%;
+    border-bottom: 1px solid cyan;
     transition: all 0.5s;
   }
   #ulbar #ul li:hover {
     transform: none;
+    border-color: white;
   }
   #ulbar #ul li:hover a {
     transform: translateX(50%);
+    color: cyan;
+    
   }
   #ulbar #ul li a {
     transition: all 0.8s ease;
     padding: 2px 6px;
     position: absolute;
-    color: burlywood;
+    color: rgb(157, 152, 152);
   }
   .shop ul li .content h4 {
     font-size: 16px;
@@ -1048,6 +1167,12 @@ body::-webkit-scrollbar-corner{
 }
 
 @media screen and (max-width: 606px) {
+  #iconsnav {
+    height: 80%;
+    margin-right: 5%;
+    width: 7rem;
+  }
+  #Home
   .shop {
     transform: translateX(75vw);
   }
@@ -1071,4 +1196,283 @@ body::-webkit-scrollbar-corner{
     border-radius: 15px;
     margin-bottom: 5px;
   }
-}/*# sourceMappingURL=main.css.map */
+}
+@media screen and (max-width:606px) {
+  .header {
+    background-position:80%;
+}
+nav #logo{
+  width: 30%;
+}
+.header #headercontent {
+  max-height: max-content;
+	width: 60%;
+  min-width: 50%;
+	top: 35%;
+	left: 4%;
+	
+}
+#ABOUT #aboutcontent {
+	max-height: max-content;
+}
+#ABOUT #aboutcontent .aboutfirst {
+	
+  height: auto;
+  width: 90%;
+ 
+}
+#ABOUT #aboutcontent .aboutfirst img
+{
+  height: auto;
+  width: 100%;
+}
+#ABOUT #aboutcontent .aboutsecond {
+	height:auto;
+	width: 95%;
+  font-size: 16px;
+}
+#ABOUT #aboutcontent .aboutsecond BUTTON {
+	margin-inline: auto;
+}
+#MENU
+{
+  padding-bottom: 1rem;
+  height: auto;
+}
+#menudiv {
+	height: auto;
+	width: 90%;
+	flex-wrap: wrap !important;
+  justify-content: space-evenly;
+  margin-top: 1rem;
+  row-gap: 1rem;
+  column-gap: 0.6rem;
+
+	
+}
+.menucard {
+	height: auto;
+	min-width: 40%;
+  padding-inline:1rem;
+}
+
+#menudiv .menucardimage {
+	height: 90px;
+}
+#menudiv .menucardcontent {
+	min-height: 100px;
+	width: 100%;
+}
+#menudiv .menucardcontent h4 {
+	margin-top:0.2em;
+}
+#menudiv .menucardcontent span {
+	margin-block: 0.6em;
+}
+#menudiv .menucardcontent button {
+	margin-block: 0.5em;
+  padding-inline:0.5rem;
+}
+
+#PRODUCT h1 {
+	height: auto;
+  padding-block: 0.1em;
+}
+#PRODUCT .productcontainer {
+	height: max-content;
+	width: 90%;
+	display: block;
+	margin-inline: auto;
+ 
+}
+#PRODUCT .productcontainer .Box {
+  height: max-content;
+  width: 60%;
+	min-width: 220px;
+  margin-inline: auto;
+  margin-block: 1rem;
+  padding-block: 1rem;
+  border: 0.1px solid rgba(194, 94, 58, 0.9);
+}
+#REVIEW {
+  padding-bottom: 0.5rem;
+  min-height:150vh;
+}
+#REVIEW #reviewcontain {
+	width: 90%;
+	display: block;
+ 
+}
+#REVIEW h1 {
+	height: auto;
+  padding-block: 0.5rem;
+}
+#REVIEW #reviewcontain .review {
+	min-height:450px;
+  height: 460px;
+  max-height: 550px;
+  width: 60%;
+	min-width: 220px;
+	margin-inline: auto;
+  margin-bottom:1rem;
+}
+#REVIEW #reviewcontain .reviewtext {
+	min-height: 45%;
+	width: 100%;
+  padding-inline: 0.5rem;
+	overflow: hidden;
+	overflow-wrap: break-word;
+	text-wrap: balance;
+	word-wrap: balance;
+	text-align: center;
+}
+.fifth
+{
+  height: auto;
+}
+.fifth h1 {
+	
+	height: auto;
+  padding-block: 1rem;
+}
+.fifth #map {
+	min-height: 400px;
+	width: 70%;
+  min-width: 200px;
+	position: relative;
+  margin:1rem auto;
+  border-radius: 1rem;
+}
+.fifth #map img {
+  height: 400px;
+  margin-inline: auto;
+  border-radius: 0.5rem;
+}
+.fifth .contactform {
+	min-height: 400px;
+	width: 70%;
+  min-width: 200px;
+	position: relative;
+  margin-inline: auto;
+  
+}
+.fifth .contactform > form
+{
+  min-height: 400px;
+  margin-bottom: 0.5rem;
+  border-radius: 0.5rem;
+}
+.sixth .blogarea {
+	min-height: 100%;
+	width: 90%;
+	display: block;
+	margin-inline: auto;
+	margin-block: 2%;
+}
+.sixth .blogBox {
+	min-height: 400px;
+	width: 70%;
+  min-width: 400px;
+  padding-bottom: 0.5rem;
+  margin-block: 1rem;
+  margin-inline: auto;
+
+}
+
+
+}
+
+
+@media (max-width:397px) {
+  .header {
+    background-image: url(./image/coffe_bg\ for\ small\ screen.jpg) ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    padding-bottom: 3rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+  
+  }
+  .header #headercontent {
+    max-height: auto;
+    width: 60%;
+    min-width: 70%;
+    padding: 1rem;
+    position: relative;
+    margin-left: 0.5rem;
+  }
+  #ABOUT #aboutcontent .aboutsecond BUTTON {
+    position: relative;
+    margin-left: -20%;
+    
+  }
+  #menudiv {
+    display: block;
+  }
+  .menucard {
+    min-width: 180px;
+    width: 70%;
+    min-height:250px;
+    padding: 1rem;
+    height: auto;
+    margin-inline:auto;
+    margin-bottom: 1rem;
+  }
+  .menucard:hover
+  {
+    border-color: lawngreen;
+  }
+
+  #PRODUCT .productcontainer .Box .Textcontainer h4 {
+    text-align: center;
+   
+  }
+  #REVIEW #reviewcontain .review {
+    min-height: 450px;
+    height: 700px;
+    max-height: auto;
+    width: 65%;
+    min-width: 220px;
+    margin-bottom: 0.5rem;
+    border-color: rgba(255, 255, 255, 0.597);
+  }
+  .fifth #map {
+    min-height: 400px;
+    min-width: 200px;
+    width: 80%;
+  }
+  .fifth .contactform > form {
+    min-height: 400px;
+    min-width: 200px;
+    width: 100%;
+  }
+  .fifth .contactform input {
+    width: 90%;
+    max-height: 10%;
+  }
+  .fifth .contactform textarea {
+    width: 90%;
+  }
+  .sixth .blogBox {
+    min-height: 400px;
+    width: 90%;
+    min-width: 200px;
+  }
+  #Outsupport {
+    max-width: 100%;
+    flex-direction: column;
+  }
+  #Socialnetwork {
+    max-width: 100%;
+  }
+  #mono {
+    height: 15%;
+    max-width: 80%;
+    justify-content: space-between;
+  }
+}
+
+

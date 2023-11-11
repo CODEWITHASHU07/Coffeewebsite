@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- linking google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="./scss/responsive.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <!-- linking bootstrap -->
     <link
@@ -14,15 +15,14 @@
       crossorigin="anonymous"
     />
     <!-- linking css -->
-    <link rel="stylesheet" href="./1st.css" />
-    <link rel="stylesheet" href="./main.css" />
+    <link rel="stylesheet" href="./main.css"/>
     <!--Tittle -->
     <title>Coffee</title>
   </head>
   <body>
     <nav>
       <div class="nav" id="logo">
-        <img src="./image/mainlogo_croped.jpg" alt="" />
+        <img src="logo/main_logo_finaly.webp" alt="" />
       </div>
 
       <div class="nav" id="ulbar">
@@ -96,13 +96,7 @@
       </div>
     </nav>
     <section class="part header" Id="HOME">
-      <img
-        src="./image/homesection.jpg"
-        height="100%"
-        width="100%"
-        alt=""
-        id="bg"
-      />
+    
       <div id="headercontent">
         <h1>
           Fresh Coffee In the <br />
@@ -145,14 +139,12 @@
               <img src="./image/what-is-specialty-coffee.jpg" alt="Coffeeimage" />
             </div>
             <div class="content">
-              <h4><span style="--c: #c2c242">Special</span> Coffee</h4>
-              <br />
+              <h4><span style="--c: #c2c242">Special</span> Coffee</h4> <br>    
               <h6><sup>Only</sup><u>699</u><strik>1099</strik></h6>
             </div>
           </li>
         </ul>
       </div>
-    
     <main>
       <section class="part" id="ABOUT">
         <h1>About Us</h1>
@@ -339,9 +331,9 @@
     </main>
     <footer>
       <section class="part fifth" id="CONTACT"><h1>CONTACT WITH US</h1>
-        <div id="map"><img src="./image/ggogle map image.png" alt=""></div>
+        <div id="map"><img src="./image/ggogle map image.png"></div>
       <div class="contactform">
-        <form >
+        <form>
         <input type="text" placeholder="Enter your Name" required></input>
         <input type="email" placeholder="Enter your mail id" required></input>
         <input type="text" placeholder="Enter your Contact Number" required></input>
@@ -373,8 +365,6 @@
           </div>
           <button>Read More</button>
         </div>
-
-
         <div class="blogBox">
           <div class="blogimage"><img src="./image/blog3.jpg" alt=""></div>
           <div class="blogcontent">
@@ -384,21 +374,34 @@
           </div>
           <button>Read More</button>
         </div>
-
-
-
-
-
-
-
-        
       </div>
-      
-      
-      
-      
-      
       </section>
+    <section id="Outsupport">
+      <div id="sector">
+        <h3>Section</h3>
+        <ul>
+          <li><a href="#HOME">HOME</a></li>
+          <li><a href="#ABOUT">ABOUT</a></li>
+          <li><a href="#MENU">MENU</a></li>
+          <li><a href="#PRODUCT">PRODUCT</a></li>
+          <li><a href="#REVIEW">REVIEW</a></li>
+          <li><a href="#CONTACT">CONTACT</a></li>
+          <li><a href="#BLOG">BLOG</a></li>
+        </ul>
+      </div>
+      <div id="Socialnetwork">
+        <h3>Connect With us</h3>
+        <span>Social Network</span>
+        <ul>
+          <li>Instagram</li>
+          <li>Facebook</li>
+          <li>Twitter </li>
+          <li>Youtube</li>
+        </ul>
+       <div id="mono"> <img src="./logo/instagramlogo.svg" alt="Instagram"><img src="./logo/facebooklogo.svg" alt="FaceBook"><img src="./logo/twitter.svg" alt="Twitter"><img src="./logo/youtube.svg" alt="Youtube"></div>
+      </div>
+
+    </section>
     </footer>
     <script src="./1st.js"></script>
   </body>

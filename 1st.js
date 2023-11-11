@@ -10,8 +10,6 @@ console.log(Section);
 // const section =document.querySelectorAll(".part")
 function funtoor(event)
 {
- 
-   
    let element=document.getElementById(`${event.target.innerText}`);
    setTimeout(()=>{element.scrollIntoView({ behavior:"smooth",block:"end",inline:"start"});},1000)
 }
